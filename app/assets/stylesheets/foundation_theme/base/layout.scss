@@ -1,0 +1,10 @@
+#content {
+  margin-top: $topbar-height;
+  margin-left: $sidebar-width;
+  padding: 25px;
+  width: auto;
+  border: 0;
+  &.merge-left {
+    margin-left: 0;
+  }
+}

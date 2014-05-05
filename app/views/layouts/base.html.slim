@@ -1,0 +1,53 @@
+doctype
+html lang=current_language
+  head
+    meta charset="utf-8"
+    title=h html_title
+    meta name="description" content= Redmine::Info.app_name
+    meta name="keywords" content="issue,bug,tracker"
+    = csrf_meta_tag
+    = favicon
+    = javascript_include_tag "foundation_theme/application"
+    = javascript_heads
+    = stylesheet_link_tag 'jquery/jquery-ui-1.9.2', 'application', :media => 'all'
+    = stylesheet_link_tag "foundation_theme/application"
+    = stylesheet_link_tag 'rtl', :media => 'all' if l(:direction) == 'rtl'
+    = heads_for_theme
+    = call_hook :view_layouts_base_html_head
+    = yield :header_tags
+  body class=(h body_css_classes)
+
+    nav.top-bar.fixed-top
+      section.top-bar-section data-topbar=""
+        ul.title-area
+          li.name
+            h1
+              = link_to Setting.app_title, home_path
+
+        = render_menu :top_menu, nil, {class: "left"} if User.current.logged? || !Setting.login_required?
+
+        ul.right
+          li.has-dropdown.not-click
+            - if User.current.logged?
+              = link_to "#{l(:label_logged_as)} #{User.current}".html_safe, "#", "data-dropdown" => "drop1"
+            - else
+              = link_to "Connexion", "#"
+            = render_menu :account_menu, nil, {class: "dropdown", id: "drop1", "data-dropdown-content" => ""}
+
+    #aside class=(display_main_menu?(@project) ? "" : "hide")
+      .hide-for-small
+        .sidebar
+          - if display_main_menu?(@project)
+            nav
+              = render_main_menu(@project, { class: "sidebar-menu" })
+          = view_layouts_base_sidebar_hook_response
+    #content class=(display_main_menu?(@project) ? "" : "merge-left")
+      = render_flash_messages
+      = yield
+      = call_hook :view_layouts_base_content
+      div[style="clear:both;"]
+  #ajax-indicator[style="display:none;"]
+    span
+      = l(:label_loading)
+  #ajax-modal[style="display:none;"]
+= call_hook :view_layouts_base_body_bottom

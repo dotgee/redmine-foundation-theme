@@ -1,0 +1,20 @@
+nav
+  ul.side-nav
+    li.heading
+      = l(:label_issue_plural)
+    li
+      = link_to l(:label_issue_view_all), _project_issues_path(@project, :set_filter => 1)
+    - if @project
+      li
+        = link_to l(:field_summary), project_issues_report_path(@project)
+    - if User.current.allowed_to?(:view_calendar, @project, :global => true)
+      li
+        = link_to l(:label_calendar), _project_calendar_path(@project)
+    - if User.current.allowed_to?(:view_gantt, @project, :global => true)
+      li
+        = link_to l(:label_gantt), _project_gantt_path(@project)
+
+= call_hook(:view_issues_sidebar_issues_bottom)
+= call_hook(:view_issues_sidebar_planning_bottom)
+= render_sidebar_queries
+= call_hook(:view_issues_sidebar_queries_bottom)

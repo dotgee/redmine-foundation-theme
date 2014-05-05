@@ -1,0 +1,14 @@
+.top-bar.fixed-top {
+  position: fixed;
+  top: 0;
+  z-index: 10001;
+  width: 100%;
+}
+
+.top-bar .title-area {
+  width: 240px;
+  background: $belize;
+  li > h1 > a {
+    background: $belize !important;
+  }
+}
