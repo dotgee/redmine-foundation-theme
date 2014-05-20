@@ -1,0 +1,220 @@
+#admin-menu a.projects {
+	background: image-url("projects-2.png") no-repeat  0 4px;
+}
+
+#admin-menu a.users {
+	background: image-url("user-2.png") no-repeat  0 4px;
+}
+
+#admin-menu a.groups {
+	background: image-url("groups-2.png") no-repeat  0 4px;
+}
+
+#admin-menu a.roles {
+	background: image-url("database_key-2.png") no-repeat  0 4px;
+}
+
+#admin-menu a.trackers {
+	background: image-url("tickets-2.png") no-repeat  0 4px;
+}
+
+#admin-menu a.issue_statuses {
+	background: image-url("tickets_edit-2.png") no-repeat  0 4px;
+}
+
+#admin-menu a.workflows {
+	background: image-url("tickets_og-2.png") no-repeat  0 4px;
+}
+
+#admin-menu a.custom_fields {
+	background: image-url("textfield-2.png") no-repeat  0 4px;
+}
+
+#admin-menu a.enumerations {
+	background: image-url("text_list_bullets-2.png") no-repeat  0 4px;
+}
+
+#admin-menu a.settings {
+	background: image-url("changeset-2.png") no-repeat  0 4px;
+}
+
+#admin-menu a.server_authentication {
+	background: image-url("server_key-2.png") no-repeat  0 4px;
+}
+
+#admin-menu a.plugins {
+	background: image-url("plugin-2.png") no-repeat  0 4px;
+}
+
+#admin-menu a.info {
+	background: image-url("help-2.png") no-repeat  0 4px;
+}
+
+div.projects h3 {
+	background: image-url("projects-2.png") no-repeat  0 4px;
+	padding-left: 30px;
+}
+
+.toggle-multiselect {
+	background: image-url("add-carre-2.png") no-repeat  0 4px;
+	padding-left: 15px;
+}
+
+#admin-menu a {
+	padding-left: 30px;
+}
+
+.my-project {
+	background: image-url("favselect-2.png") no-repeat;
+}
+
+.icon-passwd {
+	background: image-url("database_key-2.png") no-repeat  0 4px;
+}
+
+.icon-lock {
+	background: image-url("lock-2.png") no-repeat  0 4px;
+	&:before {
+		content: none !important;
+	}
+}
+
+.icon-unlock {
+	background: image-url("unlock-2.png") no-repeat  0 4px;
+}
+
+.icon-checked {
+	background: image-url("check-2.png") no-repeat  0 4px;
+}
+
+.icon-add {
+	background: image-url("add-2.png") no-repeat  0 4px;
+}
+
+.icon-reload {
+	background: image-url("reaload-2.png") no-repeat  0 4px;
+}
+
+.icon-save {
+	background: image-url("save-2.png") no-repeat  0 4px;
+}
+
+.icon-copy {
+	background: image-url("copy-2.png") no-repeat  0 4px;
+}
+
+.icon-del {
+	background: image-url("del-2.png") no-repeat  0 4px;
+}
+
+.icon-summary {
+	background: image-url("summary-2.png") no-repeat  0 4px;
+}
+
+.icon-time-add {
+	background: image-url("oclock-2.png") no-repeat  0 4px;
+}
+
+div.issues h3 {
+	background: image-url("tickets-2.png") no-repeat  0 4px;
+}
+
+div.news h3 {
+	background: image-url("newspaper-2.png") no-repeat  0 4px;
+	padding-left: 30px;
+}
+
+input.autocomplete {
+	background: image-url("search.png") no-repeat  7px 10px;
+}
+
+.icon-fav {
+	background: image-url("favselect-2.png") no-repeat  0 4px;
+}
+
+.icon-fav-off {
+	background: image-url("fav-2.png") no-repeat  0 4px;
+}
+
+.icon-edit {
+	background: image-url("modif-2.png") no-repeat  0 4px;
+}
+
+table.boards a.board, h3.comments {
+	background: image-url("comment-2.png") no-repeat  0 4px;
+}
+
+.icon-attachment {
+	background: image-url("attach-2.png") no-repeat  0 4px;
+}
+
+.icon-move {
+	background: image-url("forward-2.png") no-repeat  0 4px;
+}
+
+.icon-history {
+	background: image-url("popup-2.png") no-repeat  0 4px;
+}
+
+.icon-zoom-in {
+	background: image-url("add-2.png") no-repeat  0 4px;
+}
+
+.icon-zoom-out {
+	background: image-url("minus-2.png") no-repeat  0 4px;
+}
+
+.icon-issue {
+	background: image-url("newspaper-2.png") no-repeat  0 1px;
+
+}
+
+.icon-projects {
+	background: image-url("projects-2.png") no-repeat  0 1px;
+}
+
+span.search_for_watchers a, span.add_attachment a {
+	background: image-url("add-2.png") no-repeat  0 0;
+	background-size: 12px 10px;
+}
+
+tr.open span.expander {
+	background: image-url("moin-2.png") no-repeat  0 4px;
+}
+
+tr span.expander {
+	background: image-url("plus-2.png") no-repeat  0 4px;
+}
+
+table.cal .starting a, p.cal.legend .starting {
+	background: image-url("go-2.png") no-repeat  -3px 3px;
+}
+
+table.cal .ending a, p.cal.legend .ending {
+	background: image-url("stop-2.png") no-repeat  -3px 3px;
+}
+
+table.cal .starting.ending a, p.cal.legend .starting.ending {
+	background: image-url("goandstop-2.png") no-repeat  -3px 3px;
+}
+
+.jstElements {
+	margin-left: 10px;
+	button {
+		margin-bottom: 0px;
+		@include border-radius(3px);
+		&:hover {
+			border-color: $primary-color !important;
+			background-color: rgba(41,128,185,.1) !important;
+		}
+	}
+	.jstb_help {
+		background: image-url("help-2.png") no-repeat  3px 3px;
+	}
+	.jstb_img {
+		background: image-url("picture-2.png") no-repeat  3px 3px;
+	}
+	.jstb_link {
+		background: image-url("link-2.png") no-repeat  3px 3px;
+	}
+}

@@ -1,0 +1,171 @@
+// **** CALENDAR ****
+
+.controller-calendars.action-show {
+	#content {
+		form#query_form {
+			p {
+				width: 75px;
+				line-height: 35px;
+			}
+			p.buttons {
+				width: 100% !important;
+				margin-bottom: 50px;
+				label {
+					line-height: 35px;
+					float: left;
+					margin-right: 10px;
+				}
+				select {
+					width: 150px;
+					float: left;
+					margin-right: 25px;
+				}
+				a {
+					line-height: 35px;
+					margin-right: 10px;
+				}
+			}
+		}
+		table.cal {
+			thead {
+				tr {
+					th {
+						background-color: #FFF;
+						padding: 4px;
+						text-align: center;
+						border: 1px solid transparent;
+						color: $primary-color;
+					}
+				}
+			}
+			tbody {
+				tr:last-child {
+					td {
+						border-bottom: 1px solid transparent;
+					}
+				}
+				td {
+					border: 1px solid $third-grey;
+					font-size: 18px;
+					text-align: center !important;
+					vertical-align: middle;
+					padding: 0;
+					&:hover {
+						background: $secondary-color;
+						opacity: 0.6;
+						color: #FFF;
+					}
+					&:last-child {
+						border-right: 1px solid transparent;
+					}
+					&.today {
+						background: $primary-color;
+						color: #FFF;
+						&:hover {
+							opacity: 1.0;
+						}
+					}
+					p.day-num {
+						text-align: center;
+					}
+					&.week-number {
+						background-color: #FFF;
+						padding: 4px;
+						font-size: 1em;
+						vertical-align: middle;
+						border: 1px solid transparent;
+						color: $primary-color;
+						&:hover {
+							color: $primary-color;
+							background-color: #FFF !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+// ***** TOOLTIP CALENDAR *****
+
+#ui-datepicker-div.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+	background: #FFF;
+	@include border-radius(3px);
+	.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+		border-radius: 0;
+		background: #FFF;
+		border: 0 solid transparent;
+		padding-top: 8px;
+		.ui-datepicker-prev.ui-corner-all, .ui-datepicker-next.ui-corner-all {
+			border: 0px solid transparent;
+			margin-top: 5px;
+			background: $primary-color;
+		}
+		.ui-datepicker-prev.ui-corner-all.ui-state-hover.ui-datepicker-prev-hover, .ui-datepicker-next.ui-corner-all.ui-state-hover.ui-datepicker-next-hover {
+			border: 0 solid transparent;
+			top: 2px;
+			right: 2px;
+			margin-top: 5px;
+			span {
+				background-image: url(/assets/jquery/images/ui-icons_ffffff_256x240.png);
+			}
+		}
+	}
+	table.ui-datepicker-calendar {
+		thead {
+			tr {
+				th {
+					background: #FFF;
+				}
+			}
+		}
+		tbody {
+			tr {
+				td {
+					&.ui-datepicker-week-col {
+						padding-left: 5px;
+						font-weight: bold;
+					}
+					a {
+						&.ui-state-default {
+							background: #FFF;
+							text-align: center;
+							&:hover {
+								background: scale-color($primary-color, $lightness: 50%) !important;
+								color: #FFF;
+							}
+						}
+						&.ui-state-default.ui-state-highlight, .ui-state-active {
+							background: $primary-color;
+							color: #FFF;
+							font-weight: bold;
+							&:hover {
+								background: scale-color($primary-color, $lightness: 20%) !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.ui-datepicker-buttonpane.ui-widget-content {
+		button {
+			border: 1px solid $primary-color;
+			border-radius: 3px;
+			color: $primary-color;
+			font-family: $body-font-family;
+			background: #FFF;
+			opacity: 1.0;
+			transition: background-color 0ms ease-out;
+			transition: background-color 0ms ease-out;
+			transition: background-color 0ms ease-out;
+			&:hover {
+				background: $primary-color;
+				color: #FFF;
+			}
+		}
+	}
+}

@@ -134,4 +134,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  compass
   foundation_theme!

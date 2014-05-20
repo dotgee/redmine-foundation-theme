@@ -1,0 +1,36 @@
+fieldset  {
+	legend {
+		background: transparent;
+	}
+}
+
+a {
+	font-family: $body-font-family !important;
+	color: $primary-color;
+	&:hover {
+		color: $secondary-color !important;
+		font-family: $body-font-family;
+	}
+	.icon.icon-del {
+		font-family: $body-font-family;
+		&:hover {
+			color: $secondary-color;
+			font-family: $body-font-family;
+		}
+	}
+}
+
+
+// **** main title ****
+
+h2 {
+	background: $third-grey;
+	border-left: 3px solid $primary-color;
+	font-size: 18px;
+	padding: 5px 5px 5px 15px;
+	margin-bottom: 28px;
+}
+.contextual {
+	margin-top: 10px;
+	margin-right: 10px;
+}

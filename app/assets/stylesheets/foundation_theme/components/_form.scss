@@ -1,0 +1,64 @@
+.controller-issues {
+	&.action-new {
+		.tabular p {
+			padding-left: 107px;
+			margin-right: 10px;
+			select {
+				width: 30%;
+			}
+		}
+		.splitcontentright {
+			input {
+				float: left;
+				width: 68%%;
+				margin-right: 6px;
+			}
+			img {
+				line-height: 35px;
+			}
+		}
+		#issue_is_private {
+			margin: -4px 0 0 0;
+			width: 20px !important;
+		}
+	}
+	&.action-show {
+		.issue {
+			background: #f4f4f4;
+			padding: 6px;
+			margin-bottom: 6px;
+			border: 0 solid transparent;
+			.subject h3 {
+				color: $primary-color;
+				font-weight: 600;
+			}
+		}
+		.icon-comment {
+			background: none;
+		}
+		table {
+			background: white;
+			margin-bottom: 1.25rem;
+			border: 0px solid transparent;
+			tbody {
+				tr {
+					.progress {
+						background-color: #FFF;
+						line-height: 33px;
+						height: 1.5625rem;
+						border: 0 solid transparent;
+						padding: 2px;
+						margin-bottom: 0.625rem;
+						padding-top: 0px;
+						table.progress.progress-30 {
+							margin: 5px 10px 0 0;
+						}
+						p {
+							line-height: 33px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

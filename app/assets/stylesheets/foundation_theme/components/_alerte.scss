@@ -1,0 +1,22 @@
+.nodata, .warning {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: #fdfde8;
+	color: rgba(0,0,0,.6);
+	@include border-radius(3px);
+}
+
+div.flash.notice {
+	border: 1px  solid $success-color;
+	@include border-radius(3px);
+	padding: 10px 40px;
+	color: $success-color;
+	background: image-url("check-3.png") no-repeat  10px 10px rgba(67,172,106,.1);
+}
+
+div.flash.error, #errorExplanation {
+	border: 1px  solid $alert-color;
+	@include border-radius(3px);
+	padding: 10px 40px;
+	color: $alert-color;
+	background: image-url("alert-2.png") no-repeat  15px 10px rgba(240,65,36,.1);
+}

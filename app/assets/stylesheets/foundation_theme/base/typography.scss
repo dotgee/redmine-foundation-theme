@@ -1,23 +1,29 @@
 a:hover {
   text-decoration: none;
+  font-family: $body-font-family;
 }
 
 h1 {
+	font-family: $body-font-family;
 
 }
 
 h2 {
   font-size: 1.4rem;
+  font-family: $body-font-family;
 }
 
 h3 {
   font-size: 1.0975rem;
+  font-family: $body-font-family;
 }
 
 h4 {
   font-size: 0.96rem;
+  font-family: $body-font-family;
 }
 
 p {
   font-size: 12px;
+  font-family: $body-font-family;
 }

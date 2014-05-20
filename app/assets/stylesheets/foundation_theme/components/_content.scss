@@ -1,0 +1,31 @@
+.box {
+	background-color: $third-grey;
+}
+
+.controller-welcome.action-index {
+	.news.box {
+		p {
+			margin-left: 1.1rem;
+			a {
+				font-size: 16px;
+				margin-left: 0;
+			}
+			span {
+				font-style: normal;
+				a {
+					font-size: 12px;
+					margin-left: 0;
+				}
+				&.author {
+					font-style: italic;
+					opacity: 0.8;
+					display: inline-block;
+					margin-top: 10px;
+				}
+			}
+		}
+		a {
+			margin-left: 1.1rem;
+		}
+	}
+}

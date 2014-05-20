@@ -1,0 +1,36 @@
+#login-form {
+	table {
+		background-color: $third-grey;
+		border: none;
+		padding: 0;
+		@include border-radius(3px);
+		tbody {
+			background: none;
+			border: 1px solid #cccccc;
+			padding: 0;
+			@include border-radius(3px);
+			tr {
+				background: none;
+				td {
+					text-align: left;
+					padding: 0;
+					float: left;
+					&:last-child {
+						padding: 10px;
+					}
+					&:first-child {
+						padding-left: 20px;
+						float: left;
+					}
+					label {
+						line-height: 0;
+						float: left;
+					}
+					input {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}

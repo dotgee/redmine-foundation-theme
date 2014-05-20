@@ -1,3 +1,9 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: $body-font-family;
+	font-weight: normal;
+}
+
 #content {
   margin-top: $topbar-height;
   margin-left: $sidebar-width;

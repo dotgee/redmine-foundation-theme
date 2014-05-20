@@ -1,0 +1,182 @@
+table {
+	thead {
+		tr {
+			td {
+				background: #FFF;
+				color: $primary-color;
+			}
+		}
+	}
+	tbody {
+		table {
+			background: white;
+			margin-bottom: 1.25rem;
+			margin-top: 1.25rem;
+			border: 0px solid transparent !important;
+
+		}
+	}
+}
+
+ul {
+	margin-left: 5px;
+	li {
+		list-style: none;
+	}
+}
+
+tr.odd {
+	background: #FFF !important;
+}
+
+tr.even {
+	background: scale-color($third-grey, $lightness: 50%) !important;
+	&:hover {
+		background: #FFF;
+	}
+}
+
+.box.tabular.settings {
+	border: 0;
+}
+
+table.list {
+	th {
+		text-align: center;
+		&:first-child {
+			text-align: left;
+		}
+	}
+	tbody {
+		tr {
+			td {
+				border-top: 1px solid transparent;
+			}
+			&:hover {
+				background-color: #FFF;
+				td {
+					background-color: rgba(41,128,185,.1);
+					border-top: 1px solid rgba(41,128,185,.3);
+					border-bottom: 1px solid rgba(41,128,185,.3);
+				}
+			}
+		}
+	}
+}
+
+#content {
+	.tabs {
+		border-radius: none !important;
+		ul {
+			padding: 0;
+			border-bottom: 0;
+			li {
+				margin: 0;
+				a {
+					background-color: #FFF;
+					border: 0;
+					border-top-left-radius: 0;
+					border-top-right-radius: 0;
+					padding: 10px 20px;
+					border-top: 2px solid #FFF;
+					border-bottom: 0px;
+					&:hover {
+						background-color: #F8F8F8;
+					}
+					&.selected {
+						border-top: 2px solid $primary-color;
+						background-color: #f6f6f6;
+						border-left: 0;
+						border-right: 0;
+						border-bottom: 0;
+						&:hover {
+							background-color: #f6f6f6;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+// **** WORKFLOWS - table of status change ****
+
+table.list.workflows.transitions {
+	&.transitions-always, &.transitions-assignee, &.transitions-author {
+		th {
+			text-align: center;
+			&:first-child {
+				text-align: left;
+			}
+		}
+		tbody {
+			tr {
+				td {
+					background-color: transparent;
+					&.enabled {
+						border-top: 1px solid transparent;
+						border-bottom: 1px solid transparent;
+						background: scale-color($secondary-color, $lightness: 60%) !important;
+					}
+					&:hover {
+						background: scale-color($primary-color, $lightness: 50%) !important;
+						color: #FFF;
+					}
+				}
+				&:hover {
+					background-color: rgba(161,218,255,.3);
+					td {
+						border-top: 1px solid transparent;
+						border-bottom: 1px solid transparent;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// **** TABLE - GANTT ****
+
+// ** Filter table **
+
+fieldset#filters table {
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	border-top: 1px solid rgba(0,0,0,.2);
+	border-left: 0px solid transparent;
+	border-right: 0px solid transparent;
+	tr {
+		td {
+			width: 173px;
+			input, select {
+				margin: 0;
+				width: 200px;
+			}
+		}
+	}
+}
+
+.controller-gantts.action-show {
+	#content {
+		table {
+			tbody {
+				tr {
+					td {
+						#gantt_area {
+							// **** red line - table gantt ****
+							#today_line {
+								height: 268px !important;
+								border-left: 2px dashed red !important;
+							}
+							.gantt_hdr {
+								background-color: #FFF !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

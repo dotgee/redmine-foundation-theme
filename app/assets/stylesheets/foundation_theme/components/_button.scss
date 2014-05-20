@@ -1,0 +1,47 @@
+input[type="submit"] {
+	 @include border-radius(3px);
+	 background-color: $primary-color;
+	 color: #FFF;
+	 border: none;
+	 padding: 7px 15px;
+	 margin-left: 0px;
+	 &:hover {
+		background-color: $secondary-color;
+	 }
+}
+
+.controller-gantts.action-show {
+	#content {
+		.buttons {
+			input {
+				width: 80px;
+				float: left;
+				margin-right: 10px;
+			}
+			select {
+				width: 100px;
+			}
+		}
+	}
+}
+
+.jstElements {
+	margin-left: 10px;
+	button {
+		margin-bottom: 0px;
+		@include border-radius(3px);
+		&:hover {
+			border-color: $primary-color !important;
+			background-color: rgba(41,128,185,.1) !important;
+		}
+	}
+	.jstb_help {
+		background: image-url("help-2.png") no-repeat  3px 3px;
+	}
+	.jstb_img {
+		background: image-url("picture-2.png") no-repeat  3px 3px;
+	}
+	.jstb_link {
+		background: image-url("link-2.png") no-repeat  3px 3px;
+	}
+}

@@ -1,0 +1,116 @@
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input.file_selector,
+input, select,
+textarea {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 0.875rem;
+  margin:0 0 20px 10px;
+  @include border-radius(3px);
+  box-shadow: none;
+  background-color: white;
+  &:focus {
+    background: #FFF;
+    border-color: $primary-color;
+    @include box-shadow(none);
+    outline: none;
+  }
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    transition: none;
+    &:focus {
+      -webkit-box-shadow: 0 0 0 1000px white inset;
+    }
+}
+span.add_attachment {
+  font-size: 80%;
+  line-height: 18px;
+  float: left;
+  input.file_selector {
+    width: 300px !important;
+    margin-right: 10px;
+    float: left;
+  }
+}
+
+a img {
+  display: none;
+}
+
+textarea {
+  margin: 0 0 20px 10px !important;
+}
+
+select:hover {
+  background-color: transparent;
+  border-color: $primary-color;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 6px 0 0 0;
+  width: 30px !important;
+}
+
+label.inline {
+  width: 101px !important;
+  text-align: left;
+  padding-top: 0;
+  margin: 0;
+  input[type="checkbox"],
+  input[type="radio"] {
+    float: left;
+  }
+}
+
+#available_columns, #selected_columns {
+  height: 180px;
+  background: none;
+}
+
+.toggle-multiselect {
+  display: none;
+}
+
+em.info {
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.tabular.settings {
+  p {
+    margin-bottom: 15px;
+  }
+  input, textarea, select {
+    width: 60%;
+  }
+
+}
+
+input#time_entry_comments {
+  width: 95%;
+}
+
+.controller-workflows.action-edit {
+  label {
+    float: left;
+    select.expandable {
+      width: 140px;
+
+    }
+  }
+}

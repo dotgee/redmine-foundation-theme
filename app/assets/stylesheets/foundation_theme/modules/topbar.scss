@@ -3,12 +3,20 @@
   top: 0;
   z-index: 10001;
   width: 100%;
+  background-color: $first-grey;
 }
 
 .top-bar .title-area {
   width: 240px;
-  background: $belize;
+  background: $primary-color !important;
   li > h1 > a {
-    background: $belize !important;
+	color: #FFF !important;
+    background: $primary-color !important;
   }
+}
+
+.top-bar-section {
+	a {
+		color: #FFF !important;
+	}
 }

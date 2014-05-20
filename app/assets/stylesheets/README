@@ -1,0 +1,108 @@
+Styliser REDMINE
+
+
+**** Changer les couleurs de l'interface ****
+
+
+
+	1 -> Dans le fichier "variables.scss" (foundation_theme/app/assets/stylesheets/foudation_theme/config/variables.scss)
+
+		 2 -> Vous pouvez changer les couleurs de l'interface Redmine, pour cela vous devez changer le code hexadécimal des variables suivante pour changer les couleurs principale de l'interface :
+
+
+		$primary-color: -> #2980b9 <-;
+		$secondary-color: -> #3498db <-;
+
+		- Même chose pour les gris :
+
+
+		$first-grey: -> #32323A <-;
+		$secondary-grey: -> #202025 <-;
+		$third-grey: -> #F4F4F4 <-;
+
+		- Et également pour les messages d'alertes :
+
+
+		$alert-color: -> #f04124 <-;
+		$success-color: -> #43AC6A <-;
+		$warning-color: -> #f08a24 <-;
+		$info-color: -> #a0d3e8 <-;
+
+
+**** Importer/Changer de font ****
+
+
+
+	 1 -> Déposez le dossier de votre font contenant les fichiers (.ttf, .eot, .svg ...) dans le dossier "fonts" (foundation_theme/app/assets/fonts)
+
+		2 -> Ensuite déposez le fichier CSS de votre font dans le dossier "fonts" (foundation_theme/app/assets/stylesheets/foudation_theme/fonts)
+
+			3 -> Puis faite appel à votre font dans le fichier "_fonts.scss" (foundation_theme/app/assets/stylesheets/foudation_theme/fonts/_fonts.scss)
+
+
+				Exemple : 	@import "entypo",
+									"Lato",
+								->  "mytypo";  <-
+
+
+				4 -> Pour finir, si vous souhaitez changer la font globale de l'interface il vous suffit d'aller dans le fichier "variable.scss" et de changer le contenu de la variable si dessous :
+
+
+					$body-font-family: -> "mytypo" <-, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+
+
+
+Style REDMINE
+
+
+
+
+**** Changer les couleurs de l'interface ****
+
+
+
+	1 -> In the file “variable.scss” (foundation_theme/app/assets/stylesheets/foudation_theme/config/variables.scss)
+
+		 2 -> You can change colours of the Redmine interface, in order to do this you must change the hexadecimal code of the following variables :
+
+
+		$primary-color: -> #2980b9 <-;
+		$secondary-color: -> #3498db <-;
+
+		- Do the same for the grey tones  :
+
+
+		$first-grey: -> #32323A <-;
+		$secondary-grey: -> #202025 <-;
+		$third-grey: -> #F4F4F4 <-;
+
+		- Likewise for the alert messages :
+
+
+		$alert-color: -> #f04124 <-;
+		$success-color: -> #43AC6A <-;
+		$warning-color: -> #f08a24 <-;
+		$info-color: -> #a0d3e8 <-;
+
+
+**** Importe/Change font ****
+
+
+
+	 1 -> Insert you typography’s folder containing the files (.ttf, .eot, .svg ...) in the folder "fonts" (foundation_theme/app/assets/fonts)
+
+		2 -> Then, insert your typography’s CSS file in the folder "fonts" (foundation_theme/app/assets/stylesheets/foudation_theme/fonts)
+
+			3 -> Afterwards, call on your font in the file "_fonts.scss" (foundation_theme/app/assets/stylesheets/foudation_theme/fonts/_fonts.scss)
+
+
+				Exemple : 	@import "entypo",
+									"Lato",
+								->  "mytypo";  <-
+
+
+				4 -> Finally, if you wish to change the interface’s whole typography, you just need to go in the file “variable.scss” and change the content of the variable below :
+
+
+					$body-font-family: -> "mytypo" <-, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
