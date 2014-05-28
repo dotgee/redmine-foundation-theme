@@ -50,9 +50,21 @@
 					text-align: center !important;
 					vertical-align: middle;
 					padding: 0;
+					div.issue {
+						display: inherit;
+						position: relative;
+						left: 0;
+						max-width: 100%;
+						color: black;
+						background: transparent;
+						border: 0px solid transparent;
+						span {
+							@include border-radius(3px);
+							border: 1px solid $primary-color !important;
+						}
+					}
 					&:hover {
-						background: $secondary-color;
-						opacity: 0.6;
+						background: scale-color($primary-color, $lightness: 60%) !important;
 						color: #FFF;
 					}
 					&:last-child {

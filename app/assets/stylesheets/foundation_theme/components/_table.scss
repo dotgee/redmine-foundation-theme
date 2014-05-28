@@ -13,7 +13,6 @@ table {
 			margin-bottom: 1.25rem;
 			margin-top: 1.25rem;
 			border: 0px solid transparent !important;
-
 		}
 	}
 }
@@ -51,6 +50,12 @@ table.list {
 		tr {
 			td {
 				border-top: 1px solid transparent;
+				&.firstname, &.lastname, &.email, &.roles, &.description, &.issue, &.comments {
+					text-align: center;
+				}
+				&.project,  {
+					text-align: left;
+				}
 			}
 			&:hover {
 				background-color: #FFF;
@@ -154,10 +159,14 @@ fieldset#filters table {
 				margin: 0;
 				width: 200px;
 			}
+			&.values {
+				input {
+					height: auto;
+				}
+			}
 		}
 	}
 }
-
 .controller-gantts.action-show {
 	#content {
 		table {
@@ -175,6 +184,67 @@ fieldset#filters table {
 							}
 						}
 					}
+				}
+			}
+		}
+	}
+}
+
+// ****** table request ******
+
+.project-test.controller-issues.action-index {
+	#content {
+		form {
+			table.list tr {
+				&.context-menu-selection {
+					color: $secondary-color !important;
+					&:hover {
+						background: transparent !important;
+					}
+				}
+				td {
+					&.checkbox {
+						padding: 12px 0 0 5px;
+					}
+					&.subject {
+						text-align: center;
+					}
+					& a {
+						color: $primary-color !important;
+						&:hover {
+							color: $secondary-color !important;
+						}
+					}
+				}
+			}
+		}
+		#context-menu ul {
+			padding: 2px 0 2px 0;
+		}
+	}
+}
+
+// ***** Table time *****
+
+table.list.time-entries {
+	tbody {
+		.context-menu-selection {
+			color: $secondary-color !important;
+			&:hover {
+				background: transparent !important;
+			}
+		}
+		td {
+			&.checkbox {
+				padding: 6px 0 0 5px;
+			}
+			&.subject {
+				text-align: center;
+			}
+			& a {
+				color: $primary-color !important;
+				&:hover {
+					color: $secondary-color !important;
 				}
 			}
 		}

@@ -65,7 +65,14 @@ div.projects h3 {
 }
 
 .my-project {
-	background: image-url("favselect-2.png") no-repeat;
+	background: image-url("favselect-2.png") -2px 2px no-repeat;
+}
+
+.icon-user {
+	background: none;
+	&::before {
+		margin-right: 5px;
+	}
 }
 
 .icon-passwd {
@@ -84,6 +91,10 @@ div.projects h3 {
 }
 
 .icon-checked {
+	background: image-url("check-2.png") no-repeat  0 4px;
+}
+
+#context-menu a.icon-checked {
 	background: image-url("check-2.png") no-repeat  0 4px;
 }
 
@@ -119,9 +130,21 @@ div.issues h3 {
 	background: image-url("tickets-2.png") no-repeat  0 4px;
 }
 
+dt.issue {
+	background: image-url("tickets-2.png") no-repeat  0 4px;
+}
+
 div.news h3 {
 	background: image-url("newspaper-2.png") no-repeat  0 4px;
 	padding-left: 30px;
+}
+
+dt.news {
+	background: image-url("newspaper-2.png") no-repeat  0 4px;
+}
+
+dt.attachment {
+	background: image-url("attach-2.png") no-repeat  0 4px;
 }
 
 input.autocomplete {
@@ -130,6 +153,19 @@ input.autocomplete {
 
 .icon-fav {
 	background: image-url("favselect-2.png") no-repeat  0 4px;
+}
+
+a.project.root.parent.my-project, a.project.child.parent.my-project, a.project.child.leaf.my-project {
+	background: none;
+	padding: 0;
+}
+
+a.icon.icon-comment {
+	background: none;
+	margin-right: 10px;
+	&::before {
+		margin-right: 5px;
+	}
 }
 
 .icon-fav-off {
@@ -169,6 +205,10 @@ table.boards a.board, h3.comments {
 
 }
 
+div.members h3 {
+	background: image-url("groups-2.png") no-repeat  0 4px;
+}
+
 .icon-projects {
 	background: image-url("projects-2.png") no-repeat  0 1px;
 }
@@ -187,11 +227,13 @@ tr span.expander {
 }
 
 table.cal .starting a, p.cal.legend .starting {
-	background: image-url("go-2.png") no-repeat  -3px 3px;
+	// background: image-url("go-2.png") no-repeat  -3px 3px;
+	// background: url(../images/bullet_go.png) no-repeat -1px 0px;
 }
 
 table.cal .ending a, p.cal.legend .ending {
-	background: image-url("stop-2.png") no-repeat  -3px 3px;
+	// background: image-url("stop-2.png") no-repeat  -3px 3px;
+	// background: url(../images/bullet_end.png) no-repeat -1px 1px;
 }
 
 table.cal .starting.ending a, p.cal.legend .starting.ending {

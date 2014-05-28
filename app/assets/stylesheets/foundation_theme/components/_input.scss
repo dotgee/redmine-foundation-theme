@@ -62,7 +62,7 @@ select:hover {
 
 input[type="checkbox"],
 input[type="radio"] {
-  margin: 6px 0 0 0;
+  margin: 6px 0 0 0 !important;
   width: 30px !important;
 }
 
@@ -111,6 +111,45 @@ input#time_entry_comments {
     select.expandable {
       width: 140px;
 
+    }
+  }
+}
+
+.tab-content, #project_trackers {
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-top: 0;
+  }
+}
+
+// ***** table gantt ****
+
+.task.label {
+  background: transparent;
+  color: black;
+  padding: 0 0 0 5px;
+
+}
+
+.project.task_todo {
+  border: 0px solid #fff;
+  height: 1px;
+  margin-top: 5px;
+  background: black;
+}
+
+#gantt_area {
+  .tooltip {
+    display: inherit;
+    position: relative;
+    left: 0;
+    max-width: 100%;
+    color: black;
+    background: transparent;
+    border: 0px solid transparent;
+    span {
+      @include border-radius(3px);
+      border: 1px solid $primary-color !important;
     }
   }
 }

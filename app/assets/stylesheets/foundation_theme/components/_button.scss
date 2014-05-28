@@ -25,6 +25,20 @@ input[type="submit"] {
 	}
 }
 
+// **** FILTRER WORKFLOW ****
+
+.controller-workflows.action-edit {
+	#content {
+		form {
+			p {
+				label {
+					margin-right: 30px;
+				}
+			}
+		}
+	}
+}
+
 .jstElements {
 	margin-left: 10px;
 	button {
