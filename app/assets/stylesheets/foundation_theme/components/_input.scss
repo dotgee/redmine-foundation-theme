@@ -18,7 +18,7 @@ textarea {
   border: 1px solid #cccccc;
   color: rgba(0, 0, 0, 0.75);
   font-size: 0.875rem;
-  margin:0 0 20px 10px;
+  // margin:0 0 20px 10px;
   @include border-radius(3px);
   box-shadow: none;
   background-color: white;
@@ -47,12 +47,12 @@ span.add_attachment {
   }
 }
 
-a img {
-  display: none;
-}
+// a img {
+//   display: none;
+// }
 
 textarea {
-  margin: 0 0 20px 10px !important;
+  // margin: 0 0 20px 10px !important;
 }
 
 select:hover {

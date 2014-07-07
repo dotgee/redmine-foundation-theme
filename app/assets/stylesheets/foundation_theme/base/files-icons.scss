@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="file-icon"], [class*=" file-icon"] {
 	font-family: 'files-icons';
 	speak: none;
 	font-style: normal;
@@ -23,27 +23,27 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-file-image:before {
+.file-icon-image:before {
 	content: "\e600";
 }
-.icon-file-default:before {
+.file-icon-default:before {
 	content: "\e601";
 }
-.icon-file-pdf:before {
+.file-icon-pdf:before {
 	content: "\e602";
 }
-.icon-file-word:before {
+.file-icon-word:before {
 	content: "\e603";
 }
-.icon-file-excel:before {
+.file-icon-excel:before {
 	content: "\e604";
 }
-.icon-file-zip:before {
+.file-icon-zip:before {
 	content: "\e605";
 }
-.icon-file-powerpoint:before {
+.file-icon-powerpoint:before {
 	content: "\e606";
 }
-.icon-file-link:before {
+.file-icon-link:before {
   content: "\e607";
 }

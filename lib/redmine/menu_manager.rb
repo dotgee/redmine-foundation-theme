@@ -98,7 +98,7 @@ module Redmine
           return render_menu_node_with_children(node, project)
         else
           caption, url, selected = extract_node_details(node, project)
-          caption=project.accronym if caption == "Aperçu"
+          caption=project.name if caption == "Aperçu"
           return content_tag('li',
                                render_single_menu_node(node, caption, url, selected))
         end
