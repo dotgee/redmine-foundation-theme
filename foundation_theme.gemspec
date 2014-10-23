@@ -7,7 +7,7 @@ require "foundation_theme/version"
 Gem::Specification.new do |s|
   s.name        = "foundation_theme"
   s.version     = FoundationTheme::VERSION
-  s.authors     = ["Jérôme CHAPRON"]
+  s.authors     = ["Jerome CHAPRON"]
   s.email       = ["jchapron@dotgee.fr"]
   s.homepage    = "http://www.dotgee.fr"
   s.summary     = "Zurb Foundation theme for Redmine."
@@ -22,7 +22,8 @@ Gem::Specification.new do |s|
   s.add_dependency "foundation-rails"
   s.add_dependency "slim"
   s.add_dependency "slim-rails"
-  s.add_dependency 'sass-rails'
+  s.add_dependency 'sass-rails', "3.2.6"
+  s.add_dependency 'sass', "3.4.1"
   s.add_dependency 'uglifier'
   s.add_dependency "select2-rails"
   s.add_dependency "compass-rails"

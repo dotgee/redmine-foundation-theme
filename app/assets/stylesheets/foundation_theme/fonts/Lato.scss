@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Lato';
-    src: asset-url('Lato/Lato-Regular.eot', font);
-    src: asset-url('Lato/Lato-Regular.eot?#iefix',font) format('embedded-opentype'),
-         asset-url('Lato/Lato-Regular.woff',font) format('woff'),
-         asset-url('Lato/Lato-Regular.ttf',font) format('truetype'),
-         asset-url('Lato/Lato-Regular.svg#EntypoRegular',font) format('svg');
+    src: asset_url('Lato/Lato-Regular.eot', font);
+    src: asset_url('Lato/Lato-Regular.eot?#iefix',font) format('embedded-opentype'),
+         asset_url('Lato/Lato-Regular.woff',font) format('woff'),
+         asset_url('Lato/Lato-Regular.ttf',font) format('truetype'),
+         asset_url('Lato/Lato-Regular.svg#EntypoRegular',font) format('svg');
     font-weight: normal;
     font-style: normal;
     text-rendering: optimizeLegibility;

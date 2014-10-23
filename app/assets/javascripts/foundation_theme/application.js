@@ -1,5 +1,6 @@
 //= require ./vendor/vendor
 
+Foundation.global.namespace = '';
 $(document).ready(function() {
 
   $('.datepicker').datepicker({ dateFormat: 'dd/mm/yy' });
